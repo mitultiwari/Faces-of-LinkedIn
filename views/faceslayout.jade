@@ -1,0 +1,19 @@
+!!!
+html
+  head
+    title Faces of LinkedIn
+    link(rel='stylesheet', href='/css/faces.css')
+  body
+    #main!= body
+    script(type="text/javascript", src="/js/jquery-1.6.1.min.js")
+    script(type="text/javascript", src="/js/underscore.js")
+    script(type="text/javascript", src="/js/backbone.js")
+    script(type="text/javascript", src="https://www.google.com/jsapi")
+    script(type="text/javascript", src="/js/faces.js")
+    //- script(type="text/javascript", src="/socket.io/socket.io.js")
+    //- Prod koMCmJ5xPVCzE97FspEZJtsbl8gZheAhv8SM4J7twaistnj1UyUJIWEoQPHo6n92
+    //- Dev y8JAzL_jJwPMkPPpN3CACsxArbVnDw73JGH4K0FYKVgqlTq78qh15fKJ-II9Eb5E
+    script(type="text/javascript", src="http://platform.linkedin.com/in.js")
+      api_key: y8JAzL_jJwPMkPPpN3CACsxArbVnDw73JGH4K0FYKVgqlTq78qh15fKJ-II9Eb5E
+      authorize: true
+      onLoad: onLinkedInLoad

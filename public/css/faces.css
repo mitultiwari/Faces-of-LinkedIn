@@ -1,0 +1,425 @@
+body {
+  background-color: #132b53;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #9addff;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+  text-shadow: #000 2px 2px 1px;
+}
+
+#main {
+  color: #fff;
+  overflow: hidden;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.intro {
+  display: none;
+  line-height: 24px;
+  margin: 0 auto 40px;
+  text-align: center;
+  width: 600px;
+}
+
+.intro p {
+  margin-bottom: 32px;
+  text-align: left
+}
+
+.intro .IN-widget {
+  margin: 0 auto;
+}
+
+.gradient {
+  /*background: #162433;*/
+  /* fallback */
+  background-color:#063053;
+  /* chrome 2+, safari 4+; multiple color stops */
+  background-image:-webkit-gradient(linear,left bottom,left top,color-stop(0.32,#20498d), color-stop(0.83,#132b53));
+  /* chrome 10+, safari 5.1+ */
+  background-image:-webkit-linear-gradient(#20498d,#132b53);
+  /* firefox; multiple color stops */
+  background-image:-moz-linear-gradient(top,#20498d,#132b53);
+  /* ie 6+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#20498d', endColorstr='#132b53');
+  /* ie8 + */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#20498d', endColorstr='#132b53')";
+  /* ie10 */
+  background-image: -ms-linear-gradient(#20498d,#132b53);
+  /* opera 11.1 */
+  background-image: -o-linear-gradient(#20498d,#132b53);
+  /* The "standard" */
+  background-image: linear-gradient(#20498d,#132b53);
+
+  width: 100%;
+  height: 900px;
+  z-index: -1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
+  color: #333;
+  display: none;
+}
+
+.tabs,
+.cxnWrapper,
+.controls,
+.jobTitleWrapper {
+  width: 918px;
+}
+
+.cxnWrapper,
+.cxnMain,
+.tab.current,
+.jobTitleWrapper {
+  background-color: #C4DEFF;
+}
+
+.tabs {
+  display: none;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.tab {
+  background-color: #008cbe;
+  float: left;
+  margin-left: 20px;
+  text-align: left;
+
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+}
+
+.tab a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #666;
+
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+}
+
+.cxnWrapper,
+.topTitles {
+  clear:left;
+}
+
+.cxnWrapper {
+  display: none;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.loading {
+  text-align: center;
+}
+
+.loading span {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  padding: 5px;
+}
+
+.cxnMain {
+  float: left;
+  width: 100%;
+}
+
+.cxnMain .sides {
+  float: right;
+}
+
+.cxnMain .side {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+  display: none;
+  margin: 0 20px 40px 30px;
+  padding: 15px;
+  text-align: left;
+  width: 180px;
+
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.cxnMain .side.shadow {
+  border: 1px solid #999;
+}
+
+.cxnMain .side .count {
+  font-size: 36px;
+}
+
+.topTitles {
+  display: none;
+}
+
+.jobTitleWrapper {
+  margin: 0 auto;
+  min-height: 600px;
+  padding-top: 20px;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.jobTitleWrapper .controls {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.topTitles .explain {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+  margin: 0 auto 20px;
+  padding: 10px;
+  text-align: left;
+  width: 798px;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.controls {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.categories {
+  clear: both;
+  min-height: 24px;
+  margin: 0;
+  padding: 0 0 0 150px;
+}
+
+.categories li {
+  float: left;
+  text-align: center;
+  width: 166px;
+}
+
+.filter {
+  float: left;
+  margin: 0 0 20px 30px;
+}
+
+/*
+.toConnections,
+.toJobTitle {
+  float: right;
+}
+*/
+
+.cxns,
+.cxns .cxn {
+  margin: 0;
+  padding: 0;
+  width: 648px;
+}
+
+.cxns .cxn {
+  clear: left;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.name {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.picLink {
+  background-color: #fff;
+  border: 5px solid #fff;
+  display: block;
+  height: 80px;
+  margin: 0 auto;
+  width: 80px;
+
+  -moz-box-shadow: 3px 3px 3px #333;
+  -webkit-box-shadow: 3px 3px 3px #333;
+  box-shadow: 3px 3px 3px #333;
+
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  border-radius: 45px;
+}
+
+.picLink:hover {
+  border-color: #9addff;
+}
+
+.picLink img {
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.tab.current a,
+.profileLink {
+  color: #3375E2;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.tab.current a {
+  color: #000;
+}
+
+.profileLink {
+  margin-top: 10px;
+}
+
+.attrInfo { /* ul */
+  float: right;
+  height: 80px;
+  padding-left: 0;
+}
+
+.attrInfo li {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  float: left;
+  padding: 37px 0;
+  text-align: center;
+
+  width: 166px;
+  height: 16px;
+}
+
+.attrInfo li.first {
+  border-left: 1px solid #ccc;
+
+  -webkit-border-radius: 8px 0 0 8px;
+  -moz-border-radius: 8px 0 0 8px;
+  border-radius: 8px 0 0 8px;
+}
+
+.attrInfo li.last {
+  border-right: 1px solid #ccc;
+
+  -webkit-border-radius: 0 8px 8px 0;
+  -moz-border-radius: 0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.shadow {
+  -moz-box-shadow: 6px 6px 6px #333;
+  -webkit-box-shadow: 6px 6px 6px #333;
+  box-shadow: 6px 6px 6px #333;
+}
+
+.preload {
+  left: -9999px;
+  position: absolute;
+}
+
+.cxns.self-filter li,
+.cxns.happy-filter li,
+.cxns.sad-filter li,
+.cxns.neutral-filter li,
+.cxns.angry-filter li,
+.cxns.surprised-filter li,
+.cxns.glasses-filter li,
+.cxns.noglasses-filter li,
+.cxns.smile-filter li,
+.cxns.nosmile-filter li,
+.cxns.noattrs-filter li {
+  display: none;
+}
+
+.cxns.all-filter li,
+.cxns.self-filter li.self,
+.cxns.happy-filter li.happy,
+.cxns.sad-filter li.sad,
+.cxns.neutral-filter li.neutral,
+.cxns.angry-filter li.angry,
+.cxns.surprised-filter li.surprised,
+.cxns.glasses-filter li.glasses,
+.cxns.noglasses-filter li.noglasses,
+.cxns.smile-filter li.smile,
+.cxns.nosmile-filter li.nosmile,
+.cxns.noattrs-filter li.noattrs
+{
+  display: block;
+}
+
+.cxns.self-filter .attrInfo li,
+.cxns.happy-filter .attrInfo li,
+.cxns.sad-filter .attrInfo li,
+.cxns.neutral-filter .attrInfo li,
+.cxns.angry-filter .attrInfo li,
+.cxns.surprised-filter .attrInfo li,
+.cxns.glasses-filter .attrInfo li,
+.cxns.noglasses-filter .attrInfo li,
+.cxns.smile-filter .attrInfo li,
+.cxns.nosmile-filter .attrInfo li,
+.cxns.noattrs-filter .attrInfo li  {
+  display: block;
+}
+
+.chartWrapper div {
+  display: none;
+}
+
+.chartWrapper.smile-filter div.smiling-chart,
+.chartWrapper.nosmile-filter div.nosmiling-chart,
+.chartWrapper.glasses-filter div.glasses-chart,
+.chartWrapper.noglasses-filter div.noglasses-chart,
+.chartWrapper.happy-filter div.happy-chart,
+.chartWrapper.neutral-filter div.neutral-chart,
+.chartWrapper.sad-filter div.sad-chart,
+.chartWrapper.angry-filter div.angry-chart,
+.chartWrapper.surprised-filter div.surprised-chart,
+.chartWrapper.noattrs-filter div.noattrs-chart
+{
+  display: block;
+}
